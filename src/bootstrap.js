@@ -10,13 +10,17 @@ const createStoreWithMiddleware = applyMiddleware()(createStore);
 import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 
+import Signup from './components/auth/signup';
+import Signin from './components/auth/signin';
+
 
 function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
         <Switch>
-          <Route path='/' component={Signin}/>
+          <Route path='/' exact component={Signin}/>
+          <Route path='/signup' component={Signup}/>
         </Switch>
       </BrowserRouter>
     </Provider>
