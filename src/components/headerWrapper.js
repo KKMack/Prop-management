@@ -4,7 +4,8 @@ class HeaderWrapper extends Component {
     render() {
         return (
             <div className="header-wrapper">
-                ...HeaderWrapper
+                <h1>Welcome to Kaden's Connections!</h1>
+                <p>Please login to continue</p>
                 {this.props.children}
             </div>
         )
