@@ -9,7 +9,24 @@ class SignupForm extends Component {
     render() {
         return (
             <form className="sign-up-form">
-                <FormTitle className='sign-up__title' text='Login' />
+                <FormTitle className='sign-up__title' text='New User' />
+
+                <Field
+                    className='sign-up-form__fullname'
+                    placeholder='Enter Full Name'
+                    name='fullname'
+                    type='text'
+                    title="Full Name"
+                    component={FormInput}
+                />
+                <Field
+                    className='sign-up-form__unit'
+                    placeholder='Enter Unit Number'
+                    name='unit'
+                    type='text'
+                    title="Unit #"
+                    component={FormInput}
+                />
                 <Field
                     className='sign-up-form__email'
                     placeholder='Enter Email'
@@ -27,15 +44,14 @@ class SignupForm extends Component {
                     component={FormInput}
                 />
                 <Field
-                    className='sign-up-form__login'
-                    name='login'
+                    className='sign-up-form__create-account'
+                    name='createaccount'
                     type='submit'
-                    title="Login"
+                    title="Create Account"
                     component={FormButton}
                 />
                 <div className='sign-up-form__text-links'>
-                    <TextLink to='/forgot' text='Forgot Password'/>
-                    <TextLink to='/signup' text='Not a member? Sign up here'/>
+                    <TextLink to='/signin' text='Already Registered? Sign in'/>
                 </div>
 
             </form>
