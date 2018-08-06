@@ -22,7 +22,11 @@ class Dashboard extends Component {
         }
     }
     render() {
-      return <Tabnav tabs={this.state.tabs}/>;
+      return (
+        <div className='dashboard'>
+            <Tabnav tabs={this.state.tabs}/>
+        </div>
+      )
       }
   }
 
