@@ -2,17 +2,22 @@
 @import 'variables';
 @import 'base';
 
-//
+// HEADER
 @import 'header';
 
+// AUTH
 @import 'signin';
 @import 'signup';
 
+// HELPERS
 @import 'form-title';
 @import 'form-fields';
 @import 'text-link';
 
+// DASHBOARD
 @import 'dashboard';
 @import 'tab-nav';
 
+//NEWSLETTERS
 @import 'newsletter-grid';
+@import 'newsletter-box';
