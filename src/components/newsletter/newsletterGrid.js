@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import NewsletterBox from './newsletterBox'
-import NewsletterArchive from './newsletter-archive'
+import NewsletterArchive from './newsletterArchive'
 import NewsletterLatest from './newsletterLatest'
 import Button from '../button';
 
-class NewsletterGrid extends Comment {
+class NewsletterGrid extends Component {
 
     handleAddNewsletter = () => {
-        this.props.history.push('/newsletter/new')
+        this.props.history.push('/newsletter/new');
     }
     render() {
 
@@ -16,7 +16,7 @@ class NewsletterGrid extends Comment {
             title: 'first post',
             body: 'You should be very greatful that I am taking the time to write this. I could have just gone and put in some random Lorem Ipsum text and called it good, but I decided that I would rather prove myself to you by writing out this massive section of text. You\'re welcome.',
             date: new Date(),
-            imgUrl: 'http://via.placeholder.com/960x258'
+            imageUrl: 'http://via.placeholder.com/960x258'
         }
 
         return (
@@ -24,7 +24,7 @@ class NewsletterGrid extends Comment {
             <Button className="newsletter-grid__button" icon='fas fa-plus' callback={() => this.handleAddNewsletter()}/>
             <NewsletterBox date={new Date()}/>
             <NewsletterArchive/>
-            <NewsletterLatest {...latest}/>
+            <NewsletterLatest history={this.props.history} {...latest}/>
             </div>
         )
     }

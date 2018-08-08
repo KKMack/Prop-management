@@ -1,4 +1,4 @@
-newsletter-box {
+.newsletter-box {
 
     grid-row: box-s/box-e;
     grid-column: box-s/box-e;
@@ -16,22 +16,21 @@ newsletter-box {
     grid-template-rows: [s] 8.1rem [m] 2.3rem [e];
     grid-template-columns: [s] 1fr [e];
 
-    align-content: center;
-
     &__day {
-        // align-self: end;
+        align-self: end;
         font-size: 7rem;
         line-height: 8.1rem;
         margin-bottom: 1rem;
 
         grid-row: s/m;
         grid-column: s/e;
-    margin-top: 4.7rem;
-    margin-top: 4.7rem;
-    margin-top: 4.7rem;
-    margin-top: 4.7rem;
-    margin-top: 4.7rem;
-    margin-top: 4.7rem;
+    }
+
+    &__month-year {
+        align-self: start;
+        font-size: 2rem;
+        line-height: 2.3rem;
+
         grid-row: m/e;
         grid-column: s/e;
     }

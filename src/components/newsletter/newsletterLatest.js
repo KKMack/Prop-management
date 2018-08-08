@@ -4,7 +4,7 @@ import Button from '../button'
 class NewsletterLatest extends Component {
 
     handleEdit = () => {
-        console.log('trying to handle edit');
+        this.props.history.push('/newsletter/edit')
     }
 
     render() {
@@ -13,7 +13,7 @@ class NewsletterLatest extends Component {
             <div className='newsletter-latest'>
                 <h1 className="newsletter-latest__title">{title}</h1>
                 <img className='newsletter-latest__image' src={imageUrl}/>
-                <Button className="newsletter-latest__button" callback={() => this.handleEdit()} icon='class="fas fa-pencil-alt'/>
+                <Button className="newsletter-latest__button" callback={() => this.handleEdit()} icon='fas fa-pencil-alt'/>
                 <div className="newsletter-latest__body">
                     <p>{body}</p>
                 </div>

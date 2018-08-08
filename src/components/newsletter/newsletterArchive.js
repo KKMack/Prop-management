@@ -20,12 +20,13 @@ class NewsletterArchive extends Component {
         return (
             <div className='newsletter-archive'>
                 <div className="newsletter-archive__title">Archive</div>
-                <div className="newsletter-archive__items archive-items"></div>
-                {/* newsletter items */}
-                <ArchiveItem title='hey' date={new Date()}/>
-                <ArchiveItem title='hey' date={new Date()}/>
-                <ArchiveItem title='hey' date={new Date()}/>
-                <ArchiveItem title='hey' date={new Date()}/>
+                <div className="newsletter-archive__items archive-items">
+                    {/* newsletter items */}
+                    <ArchiveItem title='hey' date={new Date()}/>
+                    <ArchiveItem title='hey' date={new Date()}/>
+                    <ArchiveItem title='hey' date={new Date()}/>
+                    <ArchiveItem title='hey' date={new Date()}/>
+                </div>
             </div>
         )
     }
