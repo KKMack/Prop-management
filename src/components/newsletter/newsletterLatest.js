@@ -7,7 +7,7 @@ class NewsletterLatest extends Component {
                 <h1 className="newsletter-latest__title">Title Goes Here</h1>
                 <img className='newsletter-latest__image' src="http://via.placeholder.com/960x258"/>
                 <div className="newsletter-latest__body">
-                    <p>Lorem Ipsum</p>
+                    <p>You should be very greatful that I am taking the time to write this. I could have just gone and put in some random Lorem Ipsum text and called it good, but I decided that I would rather prove myself to you by writing out this massive section of text. You're welcome.</p>
                 </div>
             </div>
         )
