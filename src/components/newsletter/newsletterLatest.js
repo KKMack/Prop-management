@@ -1,14 +1,5 @@
 import React, { Component } from 'react';
-
-function Button({className, callback, text, icon }) {
-    if(icon) {
-        return (
-            <a onClick={callback} className={`${className} button`}>
-                <i className={icon}></i>
-            </a>
-        )
-    }
-}
+import Button from '../button'
 
 class NewsletterLatest extends Component {
 
@@ -22,7 +13,7 @@ class NewsletterLatest extends Component {
             <div className='newsletter-latest'>
                 <h1 className="newsletter-latest__title">{title}</h1>
                 <img className='newsletter-latest__image' src={imageUrl}/>
-                <Button className="newsletter-latest__button" callback={() => this.handleEdit()} icon='class="fas fa-edit'/>
+                <Button className="newsletter-latest__button" callback={() => this.handleEdit()} icon='class="fas fa-pencil-alt'/>
                 <div className="newsletter-latest__body">
                     <p>{body}</p>
                 </div>
