@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NewsletterBox from './newsletterBox'
 import NewsletterArchive from './newsletter-archive'
+import NewsletterLatest from './newsletterLatest'
 
 class NewsletterGrid extends Comment {
     render() {
